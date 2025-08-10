@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-from to_be.truthy import (
+from py2be.truthy import (
     string_is_falsey,
     string_is_truey,
     string_is_truthy,

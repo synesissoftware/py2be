@@ -4,7 +4,7 @@ import setuptools
 setuptools.setup(
 
     name='py2be',
-    version='0.0.1',
+    version='0.0.2',
 
     author='Matt Wilson',
     author_email='matthew@synesis.com.au',
@@ -24,8 +24,8 @@ setuptools.setup(
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     packages=[
-        'to_be',
-        'to_be/internal',
+        'py2be',
+        'py2be/internal',
         'examples',
         'tests',
     ],
