@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
 
-    name='to-be',
+    name='py2be',
     version='0.0.1',
 
     author='Matt Wilson',
