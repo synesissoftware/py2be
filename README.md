@@ -57,7 +57,7 @@ assert string_is_truthy(s2)
 
 # "orange" is not validly truthy, and is neither falsey nor truey
 assert !string_is_falsey(s3)
-assert !string_is_falsey(s3)
+assert !string_is_truey(s3)
 assert !string_is_truthy(s3)
 ```
 
