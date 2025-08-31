@@ -87,7 +87,7 @@ Defect reports, feature requests, and pull requests are welcome on https://githu
 ### Related projects
 
 * [**to-be**](https://github.com/synesissoftware/to-be) (**C**);
-* [**to-be.Ruby**](https://github.com/synesissoftware/to-be.Ruby);
+* [**to_be.Ruby**](https://github.com/synesissoftware/to_be.Ruby);
 * [**to-be.Rust**](https://github.com/synesissoftware/to-be.Rust);
 
 
