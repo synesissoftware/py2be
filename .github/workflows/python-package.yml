@@ -49,7 +49,3 @@ jobs:
     - name: Test with unittest
       run: |
         python3 -m unittest discover tests
-
-    - name: Test with pytest
-      run: |
-        pytest
