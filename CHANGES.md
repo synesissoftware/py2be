@@ -1,6 +1,11 @@
 # **py2be** Changes
 
 
+## 0.0.4 - 2nd July 2026
+
+* chore: fix project URL;
+
+
 ## 0.0.3 - 1st September 2025
 
 * GitHub Actions;

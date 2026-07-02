@@ -29,6 +29,6 @@ setuptools.setup(
         'examples',
         'tests',
     ],
-    url='https://github.com/synesissoftware/diagnosticism.Python',
+    url='https://github.com/synesissoftware/py2be',
 )
 
