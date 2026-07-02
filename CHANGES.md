@@ -1,6 +1,27 @@
 # **py2be** Changes
 
 
+## 0.0.4 - 2nd July 2026
+
+* added top-level `__all__` documenting the public API;
+* removed `tests` and `examples` from installable packages;
+* added `python_requires` for Python 2.7 and Python 3.8+;
+* added **MANIFEST.in**;
+* aligned **build_dist.sh** with **build_dist_uv.sh** (system Python);
+* added **build_dist_uv.sh** (build + `twine check`);
+* added **tests/test_package.py**;
+* added **tests/run_unittest.py** and Python 2.7 compatibility shims in **tests/__init__.py**;
+* expanded unit tests (`str2bool`, whitespace-padded stock terms);
+* extended GitHub Actions workflow (Python 2.7 job, Python 3.14, pytest);
+* fix project URL;
+* README polish (installation, Python version compatibility, Components/API reference, CI badges, examples, URL(s));
+* fixed pytest import failure (removed repo-root `__init__.py`; `pip install -e .` in CI; **pytest.ini**);
+* README: explicit Python 2.7 compatibility claim; documented `unicode` / `bytes` input policy;
+* added **examples/truthy_strings.py** and **EXAMPLES.md**;
+* added `Programming Language :: Python :: 3.14` classifier;
+* added **tests/test_bytes_rejection.py** (bytes / `bytearray` not classified on Python 3; Py2.7 text inputs);
+
+
 ## 0.0.3 - 1st September 2025
 
 * GitHub Actions;

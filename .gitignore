@@ -1,15 +1,27 @@
 
 # directories (by name)
 
-build/
-dist/
+/.bin/
+/.venv/
+
+/_build/
+/build/
+/dist-old/
+/dist/
+/scratch/
+
 *.egg-info/
 
+
 # directories (by pattern)
+
 
 # files (by name)
 
 .DS_Store
+
+notes.txt
+
 
 # files (by pattern)
 
@@ -19,4 +31,5 @@ dist/
 *.swo
 *.swp
 *.tmp
+*.zip
 

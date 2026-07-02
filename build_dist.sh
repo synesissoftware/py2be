@@ -1,4 +1,10 @@
-#!/bin/bash
+#! /bin/bash
 
-python3 setup.py sdist
+set -e
 
+cd "$(dirname "$0")"
+
+rm -rf build/ dist/ py2be.egg-info/
+
+python3 -m build
+python3 -m twine check dist/*
