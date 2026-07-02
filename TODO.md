@@ -23,12 +23,14 @@
 
 ## Functional improvements
 
-* \<none>
+* [ ] `Terms`, `string_is_truthy_with()`, and `stock_term_strings()` (cf. **to-be.Rust**);
 
 
 ## Performance improvements
 
-* \<none>
+* [x] **benchmarks/string_truthy.py** and **benchmarks/run_all_benchmarks.sh**;
+* [ ] conditional-trim fast path (cf. **to-be.Rust**);
+* [ ] `bisect` precise-table lookup (cf. **to-be.Rust**);
 
 
 <!-- ########################### end of file ########################### -->

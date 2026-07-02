@@ -1,6 +1,12 @@
 # **py2be** Changes
 
 
+## 0.1.0 - 2nd July 2026
+
+* modularised implementation (`constants`, `parse`, `truthy`); parsing algorithm unchanged from 0.0.4;
+* added **benchmarks/string_truthy.py** and **benchmarks/run_all_benchmarks.sh**;
+
+
 ## 0.0.4 - 2nd July 2026
 
 * added top-level `__all__` documenting the public API;

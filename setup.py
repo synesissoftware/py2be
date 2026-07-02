@@ -5,7 +5,7 @@ setuptools.setup(
 
     name='py2be',
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, !=3.6.*, !=3.7.*',
-    version='0.0.4',
+    version='0.1.0',
 
     author='Matt Wilson',
     author_email='matthew@synesis.com.au',
