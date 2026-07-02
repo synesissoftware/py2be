@@ -16,6 +16,7 @@ Simple Python library determining whether strings indicate *truey* or *falsey* v
 - [Introduction](#introduction)
 - [Installation \& usage](#installation--usage)
   - [Python version compatibility](#python-version-compatibility)
+  - [Text string inputs (`unicode` / `bytes`)](#text-string-inputs-unicode--bytes)
 - [Terminology](#terminology)
 - [Components](#components)
   - [Functions](#functions)
@@ -31,6 +32,8 @@ Simple Python library determining whether strings indicate *truey* or *falsey* v
 ## Introduction
 
 **to-be** is a library providing facilities for determining whether the truthyness of strings. It is implemented in several languages: **py2be** is the **Python** implementation.
+
+**py2be** explicitly supports **Python 2.7** — not other Python 2.x releases — and **Python 3.8+**. This is enforced at install time via `python_requires` in **setup.py** and exercised in GitHub Actions on **Python 2.7** and **Python 3.8–3.14**.
 
 
 ## Installation & usage
@@ -61,15 +64,37 @@ from py2be import (
 
 ### Python version compatibility
 
-**py2be** is intended to run on **Python 2.7** and **Python 3.8+**. GitHub Actions exercises **Python 2.7** and **Python 3.8–3.14**.
+**py2be** is intended to run on **Python 2.7** and **Python 3.8+** only. Versions in the Python 3.0–3.7 range are excluded by `python_requires`.
+
+| Python version | Support |
+| -------------- | ------- |
+| **2.7** | Supported (the only Python 2 release supported) |
+| **3.0 – 3.7** | Not supported |
+| **3.8+** | Supported |
 
 | Requirement | Applies to |
 | ----------- | ---------- |
 | Python **2.7** or **3.8+** | All public APIs (`str2bool`, `string_is_falsey`, `string_is_truey`, `string_is_truthy`) |
 
-Inputs are expected to be text strings (`str` on Python 3; `str` or `unicode` on Python 2.7). `bytes` are not supported. Passing `None` to `str2bool()` yields `None`; the boolean predicate functions treat unclassified input as `False`.
-
 The public API surface is listed in `py2be.__all__`.
+
+
+### Text string inputs (`unicode` / `bytes`)
+
+All public functions take a single string argument `s`. The library classifies **text** only; binary buffers are not accepted.
+
+| Input | Python 2.7 | Python 3.8+ |
+| ----- | ------------ | ----------- |
+| `unicode` / text `str` | Supported | Supported (`str`) |
+| `str` (byte string) | Supported for ASCII stock terms (e.g. `"true"`, `"no"`) | N/A — `str` is text |
+| `bytes`, `bytearray`, and other non-text types | Not supported — behaviour is undefined; decode to text first | Not supported — behaviour is undefined; decode to text first |
+| `None` | `str2bool(None)` returns `None`; the boolean predicates return `False` | Same |
+
+On **Python 3**, passing `bytes` (for example `b"true"`) will not match stock terms and is not a supported use case. Decode explicitly before calling, for example `s.decode("utf-8")` or `s.decode("ascii")`.
+
+On **Python 2.7**, prefer `unicode` literals (e.g. `u"true"`) for non-ASCII configuration values. ASCII `str` literals work for the stock vocabulary because they match the internal comparison tables directly.
+
+Trimming uses `str.strip()` / `unicode.strip()`; only leading and trailing whitespace is removed before lower-case matching.
 
 
 ## Terminology

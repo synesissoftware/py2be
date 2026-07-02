@@ -16,6 +16,7 @@
 * fix project URL;
 * README polish (installation, Python version compatibility, Components/API reference, CI badges, examples, URL(s));
 * fixed pytest import failure (removed repo-root `__init__.py`; `pip install -e .` in CI; **pytest.ini**);
+* README: explicit Python 2.7 compatibility claim; documented `unicode` / `bytes` input policy;
 
 
 ## 0.0.3 - 1st September 2025
