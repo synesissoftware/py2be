@@ -3,7 +3,8 @@
 
 ## 0.0.4 - 2nd July 2026
 
-* chore: fix project URL;
+* fix project URL;
+* fix README URL(s);
 
 
 ## 0.0.3 - 1st September 2025

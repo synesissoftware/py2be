@@ -20,12 +20,12 @@ Simple Python library determining whether strings indicate truey or falsy values
 - [Introduction](#introduction)
 - [Terminology](#terminology)
 - [Project Information](#project-information)
-	- [Where to get help](#where-to-get-help)
-	- [Contribution guidelines](#contribution-guidelines)
-	- [Dependencies](#dependencies)
-		- [Dev Dependencies](#dev-dependencies)
-	- [Related projects](#related-projects)
-	- [License](#license)
+  - [Where to get help](#where-to-get-help)
+  - [Contribution guidelines](#contribution-guidelines)
+  - [Dependencies](#dependencies)
+    - [Dev Dependencies](#dev-dependencies)
+  - [Related projects](#related-projects)
+  - [License](#license)
 
 
 ## Terminology
@@ -90,7 +90,7 @@ Defect reports, feature requests, and pull requests are welcome on https://githu
 
 ### Related projects
 
-* [**to-be**](https://github.com/synesissoftware/to-be) (**C**);
+* [**2be**](https://github.com/synesissoftware/2be) (**C**);
 * [**to_be.Ruby**](https://github.com/synesissoftware/to_be.Ruby);
 * [**to-be.Rust**](https://github.com/synesissoftware/to-be.Rust);
 
