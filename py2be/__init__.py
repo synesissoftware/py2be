@@ -18,5 +18,15 @@ from .truthy import (
 )
 
 
+__all__ = [
+    '__version__',
+
+    'str2bool',
+    'string_is_falsey',
+    'string_is_truey',
+    'string_is_truthy',
+]
+
+
 # ############################## end of file ############################# #
 

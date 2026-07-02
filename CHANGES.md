@@ -5,6 +5,8 @@
 
 * fix project URL;
 * fix README URL(s);
+* added top-level `__all__` documenting the public API;
+* removed `tests` and `examples` from installable packages;
 
 
 ## 0.0.3 - 1st September 2025

@@ -23,12 +23,10 @@ setuptools.setup(
     license='BSD-3-Clause',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    packages=[
-        'py2be',
-        'py2be/internal',
+    packages=setuptools.find_packages(exclude=[
         'examples',
         'tests',
-    ],
+    ]),
     url='https://github.com/synesissoftware/py2be',
 )
 
