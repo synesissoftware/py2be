@@ -56,7 +56,7 @@ Dir="$(cd -P "$( dirname "$Source" )" && pwd)"
 
 # This will operate recursively as long as each subdirectory of $Dir/tests
 # contains an __init__.py file (which may be empty)
-python3 -m unittest discover "$Dir/tests"
+python3 "$Dir/tests/run_unittest.py"
 
 
 # ############################## end of file ############################# #
