@@ -23,12 +23,15 @@
 
 ## Functional improvements
 
-* \<none>
+* [ ] `Terms`, `string_is_truthy_with()`, and `stock_term_strings()` (cf. **to-be.Rust**);
 
 
 ## Performance improvements
 
-* \<none>
+* [x] **benchmarks/string_truthy.py** and **benchmarks/run_all_benchmarks.sh**;
+* [x] one-sided `string_is_falsey()` / `string_is_truey()` paths with opposite-precise fast-fail (cf. **to-be.Rust**);
+* [-] ~~~conditional-trim fast path (cf. **to-be.Rust**; measured regression on CPython for stock terms)~~~;
+* [-] ~~~`bisect` precise-table lookup (cf. **to-be.Rust**; measured regression at current stock table sizes)~~~;
 
 
 <!-- ########################### end of file ########################### -->

@@ -20,6 +20,7 @@ Simple Python library determining whether strings indicate *truey* or *falsey* v
 - [Terminology](#terminology)
 - [Components](#components)
   - [Functions](#functions)
+- [Benchmarks](#benchmarks)
 - [Examples](#examples)
 - [Project Information](#project-information)
   - [Where to get help](#where-to-get-help)
@@ -154,11 +155,32 @@ The following public functions are defined in the current version:
 Stock falsey terms (after optional trimming and case folding) include `0`, `false`, `no`, and `off`. Stock truey terms include `1`, `true`, `yes`, and `on`. Several common capitalisations and mixtures of case are recognised without lower-casing first.
 
 
+## Benchmarks
+
+Benchmark scripts are provided under `benchmarks/`, modelled on **to-be.Rust**'s `string_truthy` Criterion suite.
+
+Install the package (or set `PYTHONPATH=.` from the repository root), then run:
+
+```
+$ pip install -e .
+$ ./benchmarks/run_all_benchmarks.sh
+```
+
+To run a subset of groups:
+
+```
+$ python benchmarks/string_truthy.py string_is_truthy
+$ python benchmarks/string_truthy.py mixed_batch
+```
+
+Run benchmarks on mains power for stable timings. On AC power (Apple Silicon, CPython 3.9, `number=200000`, `repeat=5`), one-sided `string_is_falsey()` / `string_is_truey()` paths are roughly **30–40% faster** on matching stock terms and **~12% faster** on unrecognised inputs versus routing both through full `_str2bool()`; `string_is_truthy()` is unchanged. Cross-polarity use (e.g. `string_is_truey("false")`) may be slower — use `str2bool()` or `string_is_truthy()` when full classification is needed.
+
+
 ## Examples
 
 Examples are provided in the `examples` directory. A detailed list of them is provided in [EXAMPLES.md](./EXAMPLES.md).
 
-To run the stock string classification example:
+To run the stock string classification example (after `pip install -e .`):
 
 ```
 $ python examples/truthy_strings.py
