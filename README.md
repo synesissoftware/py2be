@@ -51,18 +51,18 @@ s3 = "orange"
 
 # "no" is validly truthy, and is falsey
 assert string_is_falsey(s1)
-assert !string_is_truey(s1)
+assert not string_is_truey(s1)
 assert string_is_truthy(s1)
 
 # "True" is validly truthy, and is truey
-assert !string_is_falsey(s2)
+assert not string_is_falsey(s2)
 assert string_is_truey(s2)
 assert string_is_truthy(s2)
 
 # "orange" is not validly truthy, and is neither falsey nor truey
-assert !string_is_falsey(s3)
-assert !string_is_truey(s3)
-assert !string_is_truthy(s3)
+assert not string_is_falsey(s3)
+assert not string_is_truey(s3)
+assert not string_is_truthy(s3)
 ```
 
 
