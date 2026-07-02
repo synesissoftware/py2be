@@ -17,6 +17,7 @@
 * [x] expanded unit tests and GitHub Actions (Python 2.7, pytest, Python 3.14);
 * [x] README polish (installation, compatibility table, API reference);
 * [x] README: explicit Python 2.7 claim; `unicode` / `bytes` policy;
+* [x] **EXAMPLES.md** and **examples/truthy_strings.py**;
 
 
 ## Functional improvements

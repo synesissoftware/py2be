@@ -20,6 +20,7 @@ Simple Python library determining whether strings indicate *truey* or *falsey* v
 - [Terminology](#terminology)
 - [Components](#components)
   - [Functions](#functions)
+- [Examples](#examples)
 - [Project Information](#project-information)
   - [Where to get help](#where-to-get-help)
   - [Contribution guidelines](#contribution-guidelines)
@@ -151,6 +152,17 @@ The following public functions are defined in the current version:
 **NOTE:** `string_is_falsey(x) == not string_is_truey(x)` is **not** guaranteed (for example, when `x` is not classified as truthy, both predicates return `False`).
 
 Stock falsey terms (after optional trimming and case folding) include `0`, `false`, `no`, and `off`. Stock truey terms include `1`, `true`, `yes`, and `on`. Several common capitalisations and mixtures of case are recognised without lower-casing first.
+
+
+## Examples
+
+Examples are provided in the `examples` directory. A detailed list of them is provided in [EXAMPLES.md](./EXAMPLES.md).
+
+To run the stock string classification example:
+
+```
+$ python examples/truthy_strings.py
+```
 
 
 ## Project Information
