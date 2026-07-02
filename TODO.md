@@ -29,8 +29,9 @@
 ## Performance improvements
 
 * [x] **benchmarks/string_truthy.py** and **benchmarks/run_all_benchmarks.sh**;
-* [ ] conditional-trim fast path (cf. **to-be.Rust**);
-* [ ] `bisect` precise-table lookup (cf. **to-be.Rust**);
+* [x] one-sided `string_is_falsey()` / `string_is_truey()` paths with opposite-precise fast-fail (cf. **to-be.Rust**);
+* [-] ~~~conditional-trim fast path (cf. **to-be.Rust**; measured regression on CPython for stock terms)~~~;
+* [-] ~~~`bisect` precise-table lookup (cf. **to-be.Rust**; measured regression at current stock table sizes)~~~;
 
 
 <!-- ########################### end of file ########################### -->

@@ -41,6 +41,52 @@ def _str2bool(s):
     return None
 
 
+def _str_is_falsey(s):
+
+    if not isinstance(s, _text_type):
+
+        return False
+
+    if s in FALSEY_PRECISE_STRINGS:
+
+        return True
+
+    if s in TRUEY_PRECISE_STRINGS:
+
+        return False
+
+    s = s.strip().lower()
+
+    if s in FALSEY_LOWERCASE_STRINGS:
+
+        return True
+
+    return False
+
+
+def _str_is_truey(s):
+
+    if not isinstance(s, _text_type):
+
+        return False
+
+    if s in TRUEY_PRECISE_STRINGS:
+
+        return True
+
+    if s in FALSEY_PRECISE_STRINGS:
+
+        return False
+
+    s = s.strip().lower()
+
+    if s in TRUEY_LOWERCASE_STRINGS:
+
+        return True
+
+    return False
+
+
 def str2bool(s):
 
     return _str2bool(s)
@@ -48,12 +94,12 @@ def str2bool(s):
 
 def string_is_falsey(s):
 
-    return _str2bool(s) == False
+    return _str_is_falsey(s)
 
 
 def string_is_truey(s):
 
-    return _str2bool(s) == True
+    return _str_is_truey(s)
 
 
 def string_is_truthy(s):

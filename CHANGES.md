@@ -3,8 +3,9 @@
 
 ## 0.1.0 - 2nd July 2026
 
-* modularised implementation (`constants`, `parse`, `truthy`); parsing algorithm unchanged from 0.0.4;
+* modularised implementation (`constants`, `parse`, `truthy`);
 * added **benchmarks/string_truthy.py** and **benchmarks/run_all_benchmarks.sh**;
+* optimised `string_is_falsey()` and `string_is_truey()` with one-sided parse paths (`_str_is_falsey`, `_str_is_truey`), including opposite-precise fast-fail (cf. **to-be.Rust**); `str2bool()` / `string_is_truthy()` unchanged;
 
 
 ## 0.0.4 - 2nd July 2026
