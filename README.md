@@ -2,9 +2,10 @@
 
 ![Language](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![PyPI version](https://badge.fury.io/py/py2be.svg)](https://badge.fury.io/py/py2be)
 [![GitHub release](https://img.shields.io/github/v/release/synesissoftware/py2be.svg)](https://github.com/synesissoftware/py2be/releases/latest)
 [![Last Commit](https://img.shields.io/github/last-commit/synesissoftware/py2be)](https://github.com/synesissoftware/py2be/commits/master)
-[![PyPI version](https://badge.fury.io/py/py2be.svg)](https://badge.fury.io/py/py2be)
+[![CI](https://github.com/synesissoftware/py2be/actions/workflows/python-package.yml/badge.svg)](https://github.com/synesissoftware/py2be/actions/workflows/python-package.yml)
 
 Simple Python library determining whether strings indicate truey or falsy values.
 
