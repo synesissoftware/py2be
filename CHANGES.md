@@ -7,6 +7,8 @@
 * fix README URL(s);
 * added top-level `__all__` documenting the public API;
 * removed `tests` and `examples` from installable packages;
+* aligned **build_dist.sh** with **build_dist_uv.sh** (system Python);
+* added **build_dist_uv.sh** (build + `twine check`);
 
 
 ## 0.0.3 - 1st September 2025
