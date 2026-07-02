@@ -4,7 +4,7 @@ import setuptools
 setuptools.setup(
 
     name='py2be',
-    version='0.0.3',
+    version='0.0.4',
 
     author='Matt Wilson',
     author_email='matthew@synesis.com.au',
