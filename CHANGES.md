@@ -19,6 +19,7 @@
 * README: explicit Python 2.7 compatibility claim; documented `unicode` / `bytes` input policy;
 * added **examples/truthy_strings.py** and **EXAMPLES.md**;
 * added `Programming Language :: Python :: 3.14` classifier;
+* added **tests/test_bytes_rejection.py** (bytes / `bytearray` not classified on Python 3; Py2.7 text inputs);
 
 
 ## 0.0.3 - 1st September 2025

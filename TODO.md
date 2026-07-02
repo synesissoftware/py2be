@@ -18,6 +18,7 @@
 * [x] README polish (installation, compatibility table, API reference);
 * [x] README: explicit Python 2.7 claim; `unicode` / `bytes` policy;
 * [x] **EXAMPLES.md** and **examples/truthy_strings.py**;
+* [x] **tests/test_bytes_rejection.py** (documented `unicode` / `bytes` policy);
 
 
 ## Functional improvements
