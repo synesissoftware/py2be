@@ -1,4 +1,6 @@
 
+import sys
+
 from .constants import (
     FALSEY_LOWERCASE_STRINGS,
     FALSEY_PRECISE_STRINGS,
@@ -6,24 +8,34 @@ from .constants import (
     TRUEY_PRECISE_STRINGS,
 )
 
+if sys.version_info[0] < 3:
+    _text_type = basestring
+else:
+    _text_type = str
+
 
 def _str2bool(s):
 
-    if s is None:
+    if not isinstance(s, _text_type):
+
         return None
 
     if s in FALSEY_PRECISE_STRINGS:
+
         return False
 
     if s in TRUEY_PRECISE_STRINGS:
+
         return True
 
     s = s.strip().lower()
 
     if s in TRUEY_LOWERCASE_STRINGS:
+
         return True
 
     if s in FALSEY_LOWERCASE_STRINGS:
+
         return False
 
     return None
