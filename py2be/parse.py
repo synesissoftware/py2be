@@ -10,7 +10,7 @@ from .constants import (
 )
 
 if sys.version_info[0] < 3:
-    _text_type = basestring
+    _text_type = basestring  # noqa: F821
 else:
     _text_type = str
 
