@@ -10,6 +10,8 @@
 * fix project URL;
 * fix README URL(s);
 * fix README example(s);
+* added `python_requires` for Python 2.7 and Python 3.8+;
+* added **MANIFEST.in**;
 
 
 ## 0.0.3 - 1st September 2025
