@@ -4,22 +4,21 @@
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![PyPI version](https://badge.fury.io/py/py2be.svg)](https://badge.fury.io/py/py2be)
 [![GitHub release](https://img.shields.io/github/v/release/synesissoftware/py2be.svg)](https://github.com/synesissoftware/py2be/releases/latest)
-[![Last Commit](https://img.shields.io/github/last-commit/synesissoftware/py2be)](https://github.com/synesissoftware/py2be/commits/master)
+![Python](https://img.shields.io/badge/Python-2.7%20%7C%203.8+-lightgrey)
 [![CI](https://github.com/synesissoftware/py2be/actions/workflows/python-package.yml/badge.svg)](https://github.com/synesissoftware/py2be/actions/workflows/python-package.yml)
+[![Last Commit](https://img.shields.io/github/last-commit/synesissoftware/py2be)](https://github.com/synesissoftware/py2be/commits/master)
 
-Simple Python library determining whether strings indicate truey or falsy values.
-
-
-## Introduction
-
-**to-be** is a library providing facilities for determine whether the truthyness of strings. It implemented in several languages: **py2be** is the **Python** implementation.
+Simple Python library determining whether strings indicate *truey* or *falsey* values.
 
 
 ## Table of Contents <!-- omit in toc -->
 
-
 - [Introduction](#introduction)
+- [Installation \& usage](#installation--usage)
+  - [Python version compatibility](#python-version-compatibility)
 - [Terminology](#terminology)
+- [Components](#components)
+  - [Functions](#functions)
 - [Project Information](#project-information)
   - [Where to get help](#where-to-get-help)
   - [Contribution guidelines](#contribution-guidelines)
@@ -29,11 +28,55 @@ Simple Python library determining whether strings indicate truey or falsy values
   - [License](#license)
 
 
+## Introduction
+
+**to-be** is a library providing facilities for determining whether the truthyness of strings. It is implemented in several languages: **py2be** is the **Python** implementation.
+
+
+## Installation & usage
+
+Install via **pip** or **pip3**, as in:
+
+```
+$ pip3 install py2be
+```
+
+Use via **import**:
+
+```Python
+import py2be
+```
+
+or import the functions you need:
+
+```Python
+from py2be import (
+    str2bool,
+    string_is_falsey,
+    string_is_truey,
+    string_is_truthy,
+)
+```
+
+
+### Python version compatibility
+
+**py2be** is intended to run on **Python 2.7** and **Python 3.8+**. GitHub Actions exercises **Python 2.7** and **Python 3.8–3.14**.
+
+| Requirement | Applies to |
+| ----------- | ---------- |
+| Python **2.7** or **3.8+** | All public APIs (`str2bool`, `string_is_falsey`, `string_is_truey`, `string_is_truthy`) |
+
+Inputs are expected to be text strings (`str` on Python 3; `str` or `unicode` on Python 2.7). `bytes` are not supported. Passing `None` to `str2bool()` yields `None`; the boolean predicate functions treat unclassified input as `False`.
+
+The public API surface is listed in `py2be.__all__`.
+
+
 ## Terminology
 
 The term "*truthy*" is an unhelpfully overloaded term in the programming world, insofar as it is used to refer to the notion of "truthyness" - whether something can be _deemed to be_ interpretable as truth - and also the true side of that interpretation. In this library, the former interpretation is used, leaving us with the following terms:
 
-* "*truthy*" - whether something can be can be _deemed to be_ interpretable as having truth;
+* "*truthy*" - whether something can be _deemed to be_ interpretable as having truth (and, thus, will be *falsey* or *truey*);
 * "*falsey*" - whether an object can be _deemed to be_ interpretable as being false;
 * "*truey*" - whether an object can be _deemed to be_ interpretable as being true;
 
@@ -41,9 +84,9 @@ For example, consider the following **Python** program:
 
 ```Python
 from py2be import (
-	string_is_falsey,
-	string_is_truey,
-	string_is_truthy,
+    string_is_falsey,
+    string_is_truey,
+    string_is_truthy,
 )
 
 s1 = "no"
@@ -65,6 +108,24 @@ assert not string_is_falsey(s3)
 assert not string_is_truey(s3)
 assert not string_is_truthy(s3)
 ```
+
+
+## Components
+
+### Functions
+
+The following public functions are defined in the current version:
+
+| Function | Purpose |
+| -------- | ------- |
+| `str2bool(s)` | Classifies `s` as unrecognised (`None`), falsey (`False`), or truey (`True`). |
+| `string_is_falsey(s)` | Indicates that `s`, when trimmed, is classified as truthy and is deemed falsey. |
+| `string_is_truey(s)` | Indicates that `s`, when trimmed, is classified as truthy and is deemed truey. |
+| `string_is_truthy(s)` | Indicates that `s`, when trimmed, is classified as truthy (and is deemed either falsey or truey). |
+
+**NOTE:** `string_is_falsey(x) == not string_is_truey(x)` is **not** guaranteed (for example, when `x` is not classified as truthy, both predicates return `False`).
+
+Stock falsey terms (after optional trimming and case folding) include `0`, `false`, `no`, and `off`. Stock truey terms include `1`, `true`, `yes`, and `on`. Several common capitalisations and mixtures of case are recognised without lower-casing first.
 
 
 ## Project Information
@@ -102,4 +163,3 @@ Defect reports, feature requests, and pull requests are welcome on https://githu
 
 
 <!-- ########################### end of file ########################### -->
-

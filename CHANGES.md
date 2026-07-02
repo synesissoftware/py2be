@@ -14,9 +14,7 @@
 * expanded unit tests (`str2bool`, whitespace-padded stock terms);
 * extended GitHub Actions workflow (Python 2.7 job, Python 3.14, pytest);
 * fix project URL;
-* fix README URL(s);
-* fix README example(s);
-* added CI badge to README;
+* README polish (installation, Python version compatibility, Components/API reference, CI badges, examples, URL(s));
 
 
 ## 0.0.3 - 1st September 2025

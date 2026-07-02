@@ -15,6 +15,7 @@
 * [x] `python_requires` (Python 2.7 and Python 3.8+);
 * [x] Python 2.7 test infrastructure (`tests/__init__.py`, `tests/run_unittest.py`, `tests/test_package.py`);
 * [x] expanded unit tests and GitHub Actions (Python 2.7, pytest, Python 3.14);
+* [x] README polish (installation, compatibility table, API reference);
 
 
 ## Functional improvements
