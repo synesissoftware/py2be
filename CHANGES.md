@@ -18,6 +18,7 @@
 * fixed pytest import failure (removed repo-root `__init__.py`; `pip install -e .` in CI; **pytest.ini**);
 * README: explicit Python 2.7 compatibility claim; documented `unicode` / `bytes` input policy;
 * added **examples/truthy_strings.py** and **EXAMPLES.md**;
+* added `Programming Language :: Python :: 3.14` classifier;
 
 
 ## 0.0.3 - 1st September 2025
