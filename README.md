@@ -33,7 +33,7 @@ Simple Python library determining whether strings indicate *truey* or *falsey* v
 
 ## Introduction
 
-**to-be** is a library providing facilities for determining whether the truthyness of strings. It is implemented in several languages: **py2be** is the **Python** implementation.
+**to-be** is a library providing facilities for determining whether the truthiness of strings. It is implemented in several languages: **py2be** is the **Python** implementation.
 
 **py2be** explicitly supports **Python 2.7** — not other Python 2.x releases — and **Python 3.8+**. This is enforced at install time via `python_requires` in **setup.py** and exercised in GitHub Actions on **Python 2.7** and **Python 3.8–3.14**.
 
@@ -101,7 +101,7 @@ Trimming uses `str.strip()` / `unicode.strip()`; only leading and trailing white
 
 ## Terminology
 
-The term "*truthy*" is an unhelpfully overloaded term in the programming world, insofar as it is used to refer to the notion of "truthyness" - whether something can be _deemed to be_ interpretable as truth - and also the true side of that interpretation. In this library, the former interpretation is used, leaving us with the following terms:
+The term "*truthy*" is an unhelpfully overloaded term in the programming world, insofar as it is used to refer to the notion of "truthiness" - whether something can be _deemed to be_ interpretable as truth - and also the true side of that interpretation. In this library, the former interpretation is used, leaving us with the following terms:
 
 * "*truthy*" - whether something can be _deemed to be_ interpretable as having truth (and, thus, will be *falsey* or *truey*);
 * "*falsey*" - whether an object can be _deemed to be_ interpretable as being false;

@@ -1,4 +1,4 @@
-# py2be Examples
+# py2be - Examples <!-- omit in toc -->
 
 | Name | Source | Summary |
 | ---- | ------ | ------- |

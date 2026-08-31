@@ -1,4 +1,4 @@
-# **py2be** Changes
+# py2be - Changes <!-- omit in toc -->
 
 
 ## 0.1.0 - 2nd July 2026

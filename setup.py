@@ -26,7 +26,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3.13",
         "Programming Language :: Python :: 3.14",
     ],
-    description='Simple Python library determining whether strings indicate truey or falsy values',
+    description='Simple Python library determining whether strings indicate truey or falsey values',
     keywords='configuration environment string traits',
     license='BSD-3-Clause',
     long_description=open('README.md').read(),
