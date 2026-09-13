@@ -2,18 +2,21 @@
 # directories (by name)
 
 /.bin/
+/.pytest_cache/
+/.ruff_cache/
 /.venv/
 
-/_build/
-/build/
-/dist-old/
-/dist/
-/scratch/
+build/
+dist/
+dist-old/
+scratch/
 
 *.egg-info/
 
 
 # directories (by pattern)
+
+**/__pycache__/
 
 
 # files (by name)
@@ -32,4 +35,3 @@ notes.txt
 *.swp
 *.tmp
 *.zip
-
