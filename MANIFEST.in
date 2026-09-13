@@ -1,4 +1,4 @@
-include LICENSE README.md CHANGES.md EXAMPLES.md TODO.md
+include AUTHORS.md CHANGES.md EXAMPLES.md LICENSE NEWS.md README.md TODO.md
 recursive-include benchmarks *.py
 recursive-include examples *.py
 recursive-include tests *.py
