@@ -1,0 +1,2 @@
+py2be is a simple Python library determining whether strings indicate truey or falsey values
+Copyright (c) 2025-2026, Matthew Wilson and Synesis Information Systems

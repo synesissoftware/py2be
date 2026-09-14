@@ -1,6 +1,11 @@
 # py2be - Changes <!-- omit in toc -->
 
 
+## 0.1.1 - 14th September 2026
+
+* packaging, documentation, and CI modernisation (PEP 621 hybrid, canonical CI, **ruff**, helper scripts);
+
+
 ## 0.1.0 - 2nd July 2026
 
 * modularised implementation (`constants`, `parse`, `truthy`);

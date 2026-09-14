@@ -1,5 +1,7 @@
 # py2be <!-- omit in toc -->
 
+Simple Python library determining whether strings indicate *truey* or *falsey* values.
+
 ![Language](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![PyPI version](https://badge.fury.io/py/py2be.svg)](https://badge.fury.io/py/py2be)
@@ -7,8 +9,6 @@
 ![Python](https://img.shields.io/badge/Python-2.7%20%7C%203.8+-lightgrey)
 [![CI](https://github.com/synesissoftware/py2be/actions/workflows/python-package.yml/badge.svg)](https://github.com/synesissoftware/py2be/actions/workflows/python-package.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/synesissoftware/py2be)](https://github.com/synesissoftware/py2be/commits/master)
-
-Simple Python library determining whether strings indicate *truey* or *falsey* values.
 
 
 ## Table of Contents <!-- omit in toc -->
@@ -26,7 +26,9 @@ Simple Python library determining whether strings indicate *truey* or *falsey* v
   - [Where to get help](#where-to-get-help)
   - [Contribution guidelines](#contribution-guidelines)
   - [Dependencies](#dependencies)
-    - [Dev Dependencies](#dev-dependencies)
+    - [Efferent (fan-out)](#efferent-fan-out)
+    - [Development Dependencies](#development-dependencies)
+    - [Afferent (fan-in)](#afferent-fan-in)
   - [Related projects](#related-projects)
   - [License](#license)
 
@@ -201,12 +203,20 @@ Defect reports, feature requests, and pull requests are welcome on https://githu
 
 ### Dependencies
 
-**py2be** has no (non-development) dependencies.
+
+#### Efferent (fan-out)
+
+None.
 
 
-#### Dev Dependencies
+#### Development Dependencies
 
-**py2be** has no (additional) development dependencies.
+None (currently).
+
+
+#### Afferent (fan-in)
+
+None (currently).
 
 
 ### Related projects
